@@ -1,3 +1,7 @@
+Link tutorial: http://www.quan404.com/2015/07/introduction-to-meanjs.html
+
+---
+
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
