@@ -16,6 +16,12 @@ var HotelSchema = new Schema({
 		required: 'Please fill Hotel name',
 		trim: true
 	},
+	address: {
+		type: String,
+		default: '',
+		required: 'Please fill Hotel address',
+		trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now

@@ -1,6 +1,7 @@
 <section data-ng-controller="HotelsController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="hotel.name"></h1>
+		<p data-ng-bind="hotel.address"></p>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == hotel.user._id))">
 		<a class="btn btn-primary" href="/#!/hotels/{{hotel._id}}/edit">

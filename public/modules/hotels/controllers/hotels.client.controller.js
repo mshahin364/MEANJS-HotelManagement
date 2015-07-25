@@ -9,7 +9,8 @@ angular.module('hotels').controller('HotelsController', ['$scope', '$stateParams
 		$scope.create = function() {
 			// Create new Hotel object
 			var hotel = new Hotels ({
-				name: this.name
+				name: this.name,
+				address: this.address
 			});
 
 			// Redirect after save
@@ -18,6 +19,7 @@ angular.module('hotels').controller('HotelsController', ['$scope', '$stateParams
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.address = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
