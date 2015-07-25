@@ -10,7 +10,10 @@ angular.module('hotels').controller('HotelsController', ['$scope', '$stateParams
 			// Create new Hotel object
 			var hotel = new Hotels ({
 				name: this.name,
-				address: this.address
+				address: this.address,
+				description: this.description,
+				phoneNumber: this.phoneNumber,
+				emailAddress: this.emailAddress
 			});
 
 			// Redirect after save
@@ -20,6 +23,9 @@ angular.module('hotels').controller('HotelsController', ['$scope', '$stateParams
 				// Clear form fields
 				$scope.name = '';
 				$scope.address = '';
+				$scope.description = '';
+				$scope.phoneNumber = '';
+				$scope.emailAddress = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

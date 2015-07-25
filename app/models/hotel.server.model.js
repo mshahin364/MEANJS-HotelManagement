@@ -22,6 +22,24 @@ var HotelSchema = new Schema({
 		required: 'Please fill Hotel address',
 		trim: true
 	},
+	description: {
+		type: String,
+		default: '',
+		required: 'Please fill Hotel description',
+		trim: true
+	},
+	phoneNumber: {
+		type: String,
+		default: '',
+		required: 'Please fill Hotel Phone Number',
+		trim: true
+	},
+	emailAddress: {
+		type: String,
+		default: '',
+		required: 'Please fill Hotel Email Address',
+		trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now
